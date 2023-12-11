@@ -2,31 +2,103 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Título de tu Página</title>
+    <title>Mi Portafolio</title>
+    <style>
+        /* Estilos CSS (puedes modificarlos según tu gusto) */
+        /* Estilos para el cuerpo de la página */
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+    }
+
+    /* Estilos para el encabezado */
+    header {
+        background-color: #e4007f;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    /* Estilos para la navegación */
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    nav a:hover {
+        color: #ffcc00;
+    }
+
+    /* Estilos para las secciones */
+    section {
+        padding: 50px 20px;
+        margin: 20px 0;
+        background-color: #ffb6c1;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section h2 {
+        color: #333;
+    }
+
+    section p {
+        color: #666;
+    }
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    background-color: #e4007f;
+    color: #fff;
+    padding: 10px 0;
+}
+
+        /* Agrega más estilos para el contenido, como secciones, imágenes, etc. */
+    </style>
 </head>
 <body>
 
     <header>
-        <h1>Encabezado de tu Página</h1>
+        <img src="ruta/de/la/imagen.jpg" alt="Logo" width="150"><h1>Bienvenido a mi Portafolio</h1>
         <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
+            <a href="#sobre-mi">Sobre Mí</a> |
+            <a href="#proyectos">Proyectos</a> |
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
     <main>
-        <h2>Contenido Principal</h2>
-        <p>Este es un párrafo de ejemplo para el contenido principal de tu página.</p>
-        <img src="ruta-de-la-imagen.jpg" alt="Descripción de la imagen">
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <p>Aquí puedes escribir una breve descripción sobre ti, tus habilidades, educación, etc.</p>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div>
+                <h3>Proyecto 1</h3>
+                <p>Descripción del Proyecto 1.</p>
+                <!-- Puedes agregar más proyectos siguiendo la misma estructura -->
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme en: tu@email.com</p>
+        </section>
     </main>
 
     <footer>
-        <p>Pie de Página - © 2023 TuNombre</p>
+        <p>Derechos Reservados &copy; 2023</p>
     </footer>
 
 </body>
 </html>
+
